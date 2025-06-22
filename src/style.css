@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: #7F9471;
+    height: 70px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+nav h1{
+    margin: 0;
+    padding-left: 30px;
+}
+
+#mainContainer{
+    background-color:  #F5F5F5;
+    height:  calc(100vh - 70px);
+    width: 100%;
+    display: flex
+}
+
+#sidebar{
+    height: 100%;
+    width: 20%;
+    background-color:  #A3B18A;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#sidebar h2{
+    text-decoration: underline;
+}
+
+#project-display{
+    height: 70%;
+    width: 80%;
+    background-color: #F7F6F3;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: larger;
+}
+
+#project-display button{
+    text-align: start;
+}
+
+#add-project-btn{
+    border-radius: 7px;
+    height: 30px;
+    width: 30%;
+    margin-top: 20px;
+    background-color: #5C5E53;
+    color: white;
+    border-color: #7F8563;
+    font-weight: bold;
+}
+
+#todo-display{
+    height: 100%;
+    width: 80%;
+    background-color: #F7F6F3;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 25%; /* Could be more or less, depending on screen size */
+
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #form-p-projectname-input{
+    display: flex;
+    flex-direction: column;
+    
+  }
