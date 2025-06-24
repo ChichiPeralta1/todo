@@ -15,9 +15,6 @@ const renderProject = function(projects){
           
 
           projectDisplayDiv.appendChild(projectDisplayItem);
-          
-        
-          
             
           })
 
