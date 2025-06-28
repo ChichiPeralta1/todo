@@ -10,6 +10,16 @@ const renderTodos = function(todosArr){
         divCard.className = 'div-card';
 
         //
+        const completedCheckbox = document.createElement('input');
+        completedCheckbox.type = 'checkbox';
+        completedCheckbox.className = 'completed-checkbox';
+
+        divCard.appendChild(completedCheckbox)
+
+
+
+
+        //
         const titleAndDescriptionDiv = document.createElement('div');
 
         titleAndDescriptionDiv.className = 'title-description-div'
@@ -48,6 +58,14 @@ const renderTodos = function(todosArr){
         
         editBtn.innerText = 'Edit todo';
         deleteBtn.innerText = 'Delete todo';
+
+        editBtn.dataset.todoId = todo.id;
+        editBtn.dataset.action = 'edit';
+
+
+        deleteBtn.dataset.todoId = todo.id;
+        deleteBtn.dataset.action = 'delete';
+        
 
         editAndDeleteBtns.appendChild(editBtn);
         editAndDeleteBtns.appendChild(deleteBtn);

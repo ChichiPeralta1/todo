@@ -15,6 +15,16 @@ const handleProjectToTodoLogic= function(projects){
         const todoDisplayDiv = document.querySelector("#todo-display");
 
         todoDisplayDiv.innerHTML = '';
+
+        const cleanCreateTodoButton = document.querySelector('#button-nav-container')
+
+
+        if(e.target.id === 'project-display'){
+
+            cleanCreateTodoButton.innerHTML = ''
+        }
+
+
         projects.forEach(project => {
             
             if(project.id == e.target.id){
