@@ -8,11 +8,14 @@ const renderTodos = function(todosArr){
 
         const divCard = document.createElement('div');
         divCard.className = 'div-card';
+        divCard.dataset.todoContainerId = todo.id;
 
         //
         const completedCheckbox = document.createElement('input');
         completedCheckbox.type = 'checkbox';
         completedCheckbox.className = 'completed-checkbox';
+        completedCheckbox.dataset.todoId = todo.id;
+        completedCheckbox.dataset.action = 'check';
 
         divCard.appendChild(completedCheckbox)
 

@@ -20,7 +20,11 @@ const editTodo = function(projects){
                 const modal = document.getElementById("edit-todo-modal");
                 const closeBtn = document.getElementById("close-edit-button");
                 const form = document.getElementById("edit-todo-data");
-                const submitBtn = document.querySelector('#submit-edited-modal-todo')
+                const submitBtn = document.querySelector('#submit-edited-modal-todo');
+
+
+                const titleValue = document.querySelector('#todo-edited.title')
+                console.log(titleValue)
     
                 modal.style.display = "block";
     
@@ -38,8 +42,9 @@ const editTodo = function(projects){
                 form.addEventListener("submit", (e) => {
                     e.preventDefault();
                     
-                    //trabajar entre esta linea
-                  
+                    //trabajar entre esta line
+
+
                     const title = form.title.value;
                     const description = form.description.value;
                     const dueDate = form.dueDate.value;
