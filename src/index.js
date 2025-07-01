@@ -29,6 +29,12 @@ let projects = [
 
 const modal = document.getElementById("myModal");
 
+localStorage.setItem('projects', JSON.stringify(projects));
+
+const localStorageProjects = JSON.parse(localStorage.getItem('projects'))
+
+console.log(localStorageProjects)
+
 
 
 

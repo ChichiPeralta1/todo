@@ -77,11 +77,6 @@ const renderTodos = function(todosArr){
 
 
 
-
-
-
-
-
         todoDisplayDiv.appendChild(divCard)
 
        
